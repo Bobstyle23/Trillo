@@ -13,6 +13,10 @@
   --color-grey-dark-3: #999;
 }
 
+$breakpoint-xl: 75em; //1200px
+$breakpoint-lg: 68.75em; //1100px
+$breakpoint-md: 56.25em; //900px
+
 *,
 *::before,
 *::after {
@@ -23,6 +27,10 @@
 
 html {
   font-size: 62.5%;
+
+  @media only screen and (max-width: $breakpoint-lg) {
+    font-size: 50%;
+  }
 }
 
 body {
